@@ -37,14 +37,15 @@ Install XCode as described in https://cordova.apache.org/docs/en/latest/guide/pl
 ```
 ionic build ios --prod --release
 ```
-Then upload and run the generated app on an iOS device or on an emulator.
+Upload and run the generated app on an iOS device or on an emulator.
 
 ## Compile and Run on Android
-Install AndroidStudio as described in https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html. Then run
+1. Install AndroidStudio as described in https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html. Then run
+2. Run
 ```
 ionic build android --prod --release
 ```
-Then upload and run the generated app on an Android device or on an emulator.
+3. Upload and run the generated app on an Android device or on an emulator.
 
 # Configuration
 Compile the source code into an app on either Android or iOS.
