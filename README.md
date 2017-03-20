@@ -36,13 +36,13 @@ ionic serve
 ```
 ionic build ios --prod --release
 ```
-Then upload and run the generated app on the device or on an emulator.
+Then upload and run the generated app on an iOS device or on an emulator.
 
 ## Compile and Run on Android
 ```
 ionic build android --prod --release
 ```
-Then upload and run the generated app on the device or on an emulator.
+Then upload and run the generated app on an Android device or on an emulator.
 
 # Configuration
 Compile the source code into an app on either Android or iOS.
