@@ -27,11 +27,22 @@ cd ionic2ebook
 npm update
 ```
 
-## Run the app in a web browser
+## Compile and Run on a Web Browser
 ```
 ionic serve
 ```
 
+## Compile and Run on iOS
+```
+ionic build ios --prod --release
+```
+Then upload and run the generated app on the device or on an emulator.
+
+## Compile and Run on Android
+```
+ionic build android --prod --release
+```
+Then upload and run the generated app on the device or on an emulator.
 
 # Configuration
 Compile the source code into an app on either Android or iOS.
