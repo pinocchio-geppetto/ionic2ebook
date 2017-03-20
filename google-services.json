@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "59738996774",
+    "firebase_url": "https://ionic2ebook.firebaseio.com",
+    "project_id": "ionic2ebook",
+    "storage_bucket": "ionic2ebook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59738996774:android:3f9f61ec9fda0e05",
+        "android_client_info": {
+          "package_name": "com.ionic2ebook.ionic2ebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59738996774-315nfki0f610ndmah96mmf3tl00n28u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMM0y0mJH5-ckQND21EB5iykFLzmszotQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
