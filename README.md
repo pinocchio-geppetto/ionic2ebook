@@ -10,7 +10,12 @@ The advantages of this eBook reader are:
 - The author is able to place AdMob advertisements to be displayed and monetized.
 - Runs on both Android and iOS.
 
-## Download The Environment
+## Example of This eBook
+This eBook is used to publish the following books on the stated platforms:
+- [iOS ionic2ebook](https://itunes.apple.com/pk/app/malaysian-labour-law-abridged/id991514757?mt=8)
+- [Android ionic2ebook](https://play.google.com/store/apps/details?id=com.singularmosaic.malaysianlabourlaw&hl=en)
+
+## Install Ionic and Cordova
 ```
 npm install -g cordova ionic
 ```
@@ -18,17 +23,22 @@ npm install -g cordova ionic
 ## Download The Source Code
 ```
 git clone https://github.com/pinocchio-geppetto/ionic2ebook.git
+cd ionic2ebook
 npm update
 ```
 
 ## Run the app in a web browser
 ```
-cd ionic2ebook
 ionic serve
 ```
 
 
 # Configuration
+Compile the source code into an app on either Android or iOS.
+
+## How to Compile This eBook on Android
+
+## How to Comipile This eBook on iOS
 
 ## How to Place Content Into This eBook
 
@@ -36,6 +46,3 @@ ionic serve
 
 ## How to Configure Admob
 
-## How to Compile This eBook on Android
-
-## How to Comipile This eBook on iOS
