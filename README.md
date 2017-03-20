@@ -33,12 +33,14 @@ ionic serve
 ```
 
 ## Compile and Run on iOS
+Install XCode as described in https://cordova.apache.org/docs/en/latest/guide/platforms/ios/. Then run
 ```
 ionic build ios --prod --release
 ```
 Then upload and run the generated app on an iOS device or on an emulator.
 
 ## Compile and Run on Android
+Install AndroidStudio as described in https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html. Then run
 ```
 ionic build android --prod --release
 ```
