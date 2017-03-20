@@ -20,7 +20,7 @@ This eBook is used to publish the following books on the following platforms:
 npm install -g cordova ionic
 ```
 
-## Download The Source Code
+## Download The Source Code and Libraries
 ```
 git clone https://github.com/pinocchio-geppetto/ionic2ebook.git
 cd ionic2ebook
