@@ -15,7 +15,7 @@ This eBook is used to publish the following books on the following platforms:
 - [iOS, Malaysian Labour Law Abridged](https://itunes.apple.com/pk/app/malaysian-labour-law-abridged/id991514757?mt=8)
 - [Android, Malaysian Labour Law Abridged](https://play.google.com/store/apps/details?id=com.singularmosaic.malaysianlabourlaw&hl=en)
 
-## Install Ionic and Cordova
+## Install Ionic2, Angular2 and Cordova
 ```
 npm install -g cordova ionic
 ```
