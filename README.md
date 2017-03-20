@@ -10,7 +10,7 @@ The advantages of this eBook reader are:
 - Ability to monitize content using AdMob advertisements.
 - Runs on both Android and iOS.
 
-## Example of This eBook
+## Example Use of This eBook
 This eBook is used to publish the following books on the following platforms:
 - [iOS, Malaysian Labour Law Abridged](https://itunes.apple.com/pk/app/malaysian-labour-law-abridged/id991514757?mt=8)
 - [Android, Malaysian Labour Law Abridged](https://play.google.com/store/apps/details?id=com.singularmosaic.malaysianlabourlaw&hl=en)
