@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "ionic2ebook.keystore",
+            "storePassword": "123456",
+            "alias": "ionic2ebook",
+            "password" : "123456",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "ionic2ebook.keystore",
+            "storePassword": "123456",
+            "alias": "ionic2ebook",
+            "password" : "123456",
+            "keystoreType": ""
+        }
+    }
+}
