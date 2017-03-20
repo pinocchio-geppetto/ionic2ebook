@@ -6,8 +6,8 @@ This ebook reader displays each page with CSS multi-column layout. As each page 
 All HTML5 content and CSS styling that can be displayed in CSS multi-column layout can be displayed by this eBook reader.
 
 The advantages of this eBook reader are:
-- The author is able to track how the user reads the eBook using Firebase Analytics. Each pan of a page is tracked.
-- The author is able to place AdMob advertisements to be displayed and monetized.
+- Ability to track how the user reads the eBook using Firebase Analytics. Each pan of a page is tracked.
+- Ability to place AdMob advertisements to be displayed and monetized.
 - Runs on both Android and iOS.
 
 ## Example of This eBook
