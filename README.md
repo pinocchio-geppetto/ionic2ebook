@@ -10,9 +10,25 @@ The advantages of this eBook reader are:
 - The author is able to place AdMob advertisements to be displayed and monetized.
 - Runs on both Android and iOS.
 
-# Configuration
+## Download The Environment
+```
+npm install -g cordova ionic
+```
 
-## How to Download The Source Code
+## Download The Source Code
+```
+git clone https://github.com/pinocchio-geppetto/ionic2ebook.git
+npm update
+```
+
+## Run the app in a web browser
+```
+cd ionic2ebook
+ionic serve
+```
+
+
+# Configuration
 
 ## How to Place Content Into This eBook
 
