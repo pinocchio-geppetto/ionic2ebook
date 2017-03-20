@@ -1,5 +1,5 @@
 {
-  "name": "ionic-hello-world",
+  "name": "ionic2ebook",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -52,5 +52,5 @@
       "locator": "ios"
     }
   ],
-  "description": "labour_law_malaysia4: An Ionic project"
+  "description": "ionic2ebook"
 }
