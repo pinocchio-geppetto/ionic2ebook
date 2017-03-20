@@ -11,7 +11,7 @@ The advantages of this eBook reader are:
 - Runs on both Android and iOS.
 
 ## Example of This eBook
-This eBook is used to publish the following books on the stated platforms:
+This eBook is used to publish the following books on the following platforms:
 - [iOS ionic2ebook](https://itunes.apple.com/pk/app/malaysian-labour-law-abridged/id991514757?mt=8)
 - [Android ionic2ebook](https://play.google.com/store/apps/details?id=com.singularmosaic.malaysianlabourlaw&hl=en)
 
