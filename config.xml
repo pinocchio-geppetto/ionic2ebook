@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionic2ebook.ionic2ebook" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Malaysian Labour Law Abridged</name>
-    <description>Malaysia labour law from the employee's perspective.</description>
-    <author email="labour.law.dummies@gmail.com" href="">TS Chuah</author>
+    <name>Ionic 2 e-book browser</name>
+    <description>An e-book browser built with Ionic 2.</description>
+    <author email="anonymous@gmail.com" href="">ionic2ebook</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
