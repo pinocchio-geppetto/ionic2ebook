@@ -52,6 +52,8 @@ Compile the source code into an app on either Android or iOS.
 ## How to Place Content Into This eBook
 
 ## How to Configure Firebase Analytics
+1. For Android, update ionic2ebook/google-services.json with a new download from your Firebase console. Formore information: https://firebase.google.com/docs/android/setup.
+2. For iOS, update ionic2ebook/GoogleService-Info.plist with a new download from your Firebase console. For more information: https://firebase.google.com/docs/ios/setup.
 
 ## How to Configure Admob
 
