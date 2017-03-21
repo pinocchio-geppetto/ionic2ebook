@@ -55,5 +55,7 @@ Compile the source code into an app on either Android or iOS.
 1. For Android, update ionic2ebook/google-services.json with a new download from your Firebase console. Formore information: https://firebase.google.com/docs/android/setup.
 2. For iOS, update ionic2ebook/GoogleService-Info.plist with a new download from your Firebase console. For more information: https://firebase.google.com/docs/ios/setup.
 
+If the firebase files above are not updated, the app will continue to work but there will be no Firebase reporting.
+
 ## How to Configure Admob
 
