@@ -55,7 +55,7 @@ This ebook relies on HTML5 and CSS styling which is paged with CSS multi-column 
 
 The examples inside the book shows how Table Of Contents should be displayed. It is self explanatory.
 
-Reserved tags are used by this eBook to represent special positions within the book. They are:
+Reserved tags are used by this eBook to represent special positions within the content. They are:
 1. id="Preface"
 This id is used to identify the begining of the book that is just past the table of content. This eBook will not remember last position read by the reader if the reader is at the Table of Content.
 
