@@ -52,7 +52,7 @@ ionic serve
 This is how to do it...
 
 # Configuration
-Configure your eBook to track usages statics and to monitize your eBook.
+Configure your eBook to track usages statics using Firebase and to monitize your eBook using AdMob.
 
 ## Configure Firebase Analytics
 Register a Firebase account. For each platform, do the following:
