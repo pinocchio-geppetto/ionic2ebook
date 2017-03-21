@@ -39,7 +39,7 @@ ionic serve
 
 ## Compile and Run on Android
 1. Install AndroidStudio as described in https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html.
-2. Generate your keystore as described here: http://ionicframework.com/docs/guide/publishing.html. The [existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore) will continue to work but you will not want to publish your app using this keystore.
+2. Generate your keystore and replace it with the existing keystore as described here: http://ionicframework.com/docs/guide/publishing.html. The [existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore) will continue to work but you will not want to publish your app using this keystore.
 3. The passowrd to the keystore in (2) above is stored here: [password to existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore.password) in case it becomes handy.
 3. Run `ionic build android --prod --release'
 4. Upload and run the generated app on an Android device or on an emulator.
