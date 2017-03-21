@@ -60,16 +60,16 @@ If the firebase files above are not updated, the app will continue to work but t
 
 ## Configure AdMob
 Register an AdMob account. For each platform, do the following:
-1. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update the adId to your AdMob adID.
-2. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update the adId to your AdMob adID.
+1. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update `adId` to your AdMob `adId`.
+2. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update `adId` to your AdMob `adId`.
 
 ```
     if (this.platform.is('ios')) {
-      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase, will be changed to actual in the constructor
+      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase. Change this to your adId
       console.log('ios ad selected.');
     }
     else if (this.platform.is('android')) {
-      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase, will be changed to actual in the constructor
+      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase. Change this to your adId
       console.log('andoird ad selected.');
     }
 ```
