@@ -34,15 +34,19 @@ ionic serve
 
 ## Compile and Run on iOS
 1. Install XCode as described in https://cordova.apache.org/docs/en/latest/guide/platforms/ios/.
-2. Run `ionic build ios --prod --release`
-3. Upload and run the generated app on an iOS device or on an emulator.
+2. Register an iTunesConnect developer account as described in the iOS section here: http://ionicframework.com/docs/guide/publishing.html.
+3. Sign your app as in (2) above.
+4. Run `ionic build ios --prod --release`.
+5. Upload and run the generated app on an iOS device or on an emulator using XCode.
+6. Publish your eBook as described in the iOS section: http://ionicframework.com/docs/guide/publishing.html.
 
 ## Compile and Run on Android
 1. Install AndroidStudio as described in https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html.
 2. Generate your keystore and replace it with the existing keystore as described here: http://ionicframework.com/docs/guide/publishing.html. The [existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore) will continue to work but you will not want to publish your app using this keystore.
 3. The passowrd to the keystore in (2) above is stored here: [password to existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore.password) in case it becomes handy.
-3. Run `ionic build android --prod --release'
+3. Run `ionic build android --prod --release'.
 4. Upload and run the generated app on an Android device or on an emulator.
+5. Publish your eBook as described in the Android section: http://ionicframework.com/docs/guide/publishing.html.
 
 # Configuration
 Compile the source code into an app on either Android or iOS.
