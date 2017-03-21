@@ -46,12 +46,24 @@ ionic serve
 3. The passowrd to the keystore in (2) above is stored here: [password to existing keystore](https://github.com/pinocchio-geppetto/ionic2ebook/blob/master/ionic2ebook.keystore.password) in case it becomes handy.
 3. Run `ionic build android --prod --release'.
 4. Upload and run the generated app on an Android device or on an emulator.
-5. Publish your eBook as described in the Android section: http://ionicframework.com/docs/guide/publishing.html.
+5. Publish your eBook as described in the Android section: [http://ionicframework.com/docs/guide/publishing.html](http://ionicframework.com/docs/guide/publishing.html).
 
 Note that this eBook uses Crosswalk and Crosswalk (as of this writing using AndroidStudio version 2.3, and Android SDK Tools 25.0.3) does not display on Android emulators and GenyMotion. Crosswalk will display on actual devices and can be tested this way.
 
 # Place Content Into This eBook
-This is how to do it...
+This ebook relies on HTML5 and CSS styling which is paged with CSS multi-column layout. Any HTML5 and CSS styling which is supported by CSS multi-column layout will work with this eBook.
+
+The examples inside the book shows how Table Of Contents should be displayed. It is self explanatory.
+
+Reserved tags are used by this eBook to represent special positions within the book. They are:
+1. id="Preface"
+This id is used to identify the begining of the book that is just past the table of content. This eBook will not remember last position read by the reader if the reader is at the Table of Content.
+
+2. id="_Toc417167144"
+This is the "chapter 1" tag. The book will scroll here if it has never been viewed before.
+It is the first page displayed if the book is opened for the very first time.
+
+3. The last empty `<p></p>` tag at the very end of the book is needed to signify the end of book. The Safari browser is not able to return the correct coordinates within the eBook when the last paragraph spans more than one column if this empty is not placed at the very end. Keep this empty paragraphy as the last paragraph.
 
 # Configuration
 Configure your eBook to track usages statics using Firebase and to monitize your eBook using AdMob.
