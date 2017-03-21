@@ -1,0 +1,102 @@
+<ion-header [style.opacity]="0.8" [style.z-index]="2" [@toolbarAppear]="toolbarAppear">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Reading</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  [style.z-index]="0" [ngClass]="videoColours[videoColourIdSelected].binding"
+(window:resize)="onResize()" (window:orientationchanged)="onResize()">
+
+  <div ion-fixed class="tsc_book_full_screen" [ngClass]="videoColours[videoColourIdSelected].binding">
+
+    <!--
+    Need to create a div over another div that contains the contents of the book.
+    Else, Chrome will not display the content of the book correctly if "tsc_book_content" is scrolled. It has to be fixed size when the content is large.
+    1) (tap)="onTapped({offsetDirection: $event.offsetDirection, distance: $event.distance})"
+    can't use the (tap) event because it conflicts withe the Table of Content (tap) events and only on Crosswalk webviews only.
+    Use (click) instead.
+    -->
+    <div class="tsc_book_content_container" #topBookRef
+    [style.webkitTransform]="transformCommand" [style.transform]="transformCommand" [style.opacity]="1.0"
+    [style.fontSize]="choiceOfFontSizes[fontSize].binding"
+    [style.fontFamily]="choiceOfFonts[font].binding"
+    [style.z-index]="2"
+    [ngClass]="videoColours[videoColourIdSelected].binding"
+    [@flipManyPagesNow] = "flipManyPagesNow" (@flipManyPagesNow.done) = "flipManyPagesNowDone($event)"
+    [@flipRightOrLeft] = "flipRightOrLeftNow" (@flipRightOrLeft.done) = "flipRightOrLeftNowDone($event)"
+    (click)="onTapped({offsetDirection: $event.offsetDirection, distance: $event.distance})"
+    (panstart)="onPanStart({offsetDirection: $event.offsetDirection, distance: $event.distance})"
+    (panend)="onPanEnd({offsetDirection: $event.offsetDirection, distance: $event.distance})"
+    (panleft)="onPanLeft({offsetDirection: $event.offsetDirection, distance: $event.distance})"
+    (panRight)="onPanRight({offsetDirection: $event.offsetDirection, distance: $event.distance})">
+      <div class="tsc_book_content_container_scroll"
+      [smscColumnScroll]="scrollTopToPosition"
+      [ngClass]="videoColours[videoColourIdSelected].binding">
+        <smsc-book-content class="tsc_book_content" #topPageRef
+        (TocGoTo) = onTocGoto($event.id);
+        [ngClass]="videoColours[videoColourIdSelected].binding"
+        [style.columnWidth.px]="bookContentColumnWidth" [style.webkitColumnWidth.px]="bookContentColumnWidth"
+        [style.width]="tscBookContentRightMostCoordinate">
+        </smsc-book-content>
+      </div>
+      <div class="tsc_book_page_number"
+      [ngClass]="videoColours[videoColourIdSelected].binding">
+          Page {{ getCurrentTopPageForDisplayOnBook() }} of {{ getTotalPagesForDisplayOnBook() }}
+      </div>
+    </div>
+  
+    <!--
+    The directive [style.filter] below does not work. Therefore, use the alternative [ngStyle].
+    -->
+    <div class="tsc_book_content_container"
+    [style.fontSize]="choiceOfFontSizes[fontSize].binding"
+    [style.fontFamily]="choiceOfFonts[font].binding"
+    [ngClass]="videoColours[videoColourIdSelected].binding"
+    [ngStyle]="{'filter' : filterCommand, '-webkit-filter' : filterCommand}"
+    [style.z-index]="0"
+    >
+      <div class="tsc_book_content_container_scroll"
+      [smscColumnScroll]="scrollBottomToPosition"
+      [ngClass]="videoColours[videoColourIdSelected].binding">
+        <smsc-book-content class="tsc_book_content" smscClearIds
+        [ngClass]="videoColours[videoColourIdSelected].binding"
+        [style.columnWidth.px]="bookContentColumnWidth" [style.webkitColumnWidth.px]="bookContentColumnWidth"
+        [style.width]="tscBookContentRightMostCoordinate">
+        </smsc-book-content>
+      </div>
+      <div class="tsc_book_page_number"
+      [ngClass]="videoColours[videoColourIdSelected].binding">
+          Page {{ getCurrentBottomPageForDisplayOnBook() }} of {{ getTotalPagesForDisplayOnBook() }}
+      </div>
+    </div>
+
+  </div> <!-- <div ion-fixed style="width: 100%; height: 100%;"> -->
+
+</ion-content>
+
+<ion-footer [style.opacity]="0.8" [style.z-index]="2"  [@toolbarAppear]="toolbarAppear">
+  <ion-toolbar>
+    <ion-buttons start>
+      <!-- (click) is used to trap the event and not (tap) because (tap) will result in multiple "clicks" on the 
+           iPhone's browser running on both the emulator and the native platform.
+           (tap) from hammer.js is able to trap double-tap and tripple-tap and will require more work to sync the tap event from .tsc_book_content_container.
+       -->
+      <button ion-button class="text-on-bottom" (click)="onFontSizeChange($event)">
+        <ion-icon name="eye"></ion-icon>Font Size
+      </button>
+      <button ion-button class="text-on-bottom" (click)="onFontChange($event)">
+        <ion-icon name="at"></ion-icon>Font Type
+      </button>
+      <button ion-button class="text-on-bottom" (click)="onVideoColourChange($event)">
+        <ion-icon name="easel"></ion-icon>Colour
+      </button>
+        <button ion-button class="text-on-bottom" (click)="onGoToPageNumber($event)">
+        <ion-icon name="locate"></ion-icon>Go To
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

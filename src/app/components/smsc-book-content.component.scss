@@ -1,0 +1,177 @@
+smsc-book-content {
+
+  p.MsoToc1, p.MsoToc2, p.MsoToc3
+    {
+      color:#387ef5;
+    }
+
+  p.MsoToc1:hover, p.MsoToc2:hover, p.MsoToc3:hover
+    {
+      cursor: pointer; cursor: hand;
+    }
+
+  p.MsoToc2
+    {
+      margin-left: 2em;
+    }
+
+  p.MsoToc3
+    {
+      margin-left: 4em;
+    }
+
+  /************************************************/
+
+  p.ContentNormal {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top: 1em;
+    margin-bottom: 0em;
+  }
+
+  p.ContentNormal.Highlight {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    font-weight: bold;
+  }
+
+  ul {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top:0in;
+    margin-bottom:0in;
+    margin-left: 0em;
+  }
+
+  li.ContentNormal {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: initial;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+  }
+
+  div {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  div.ContentIndentHighlight {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    font-style: italic;
+    border-style: groove;
+    border-width: 0.5em;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+  }
+
+  // this does not work for Safari.
+  // Safari does not apply a "break-before: avoid" on first-of-type.
+  /* h1:first-of-type {
+    -webkit-column-break-before: avoid;
+    -webkit-break-before: avoid;
+    //break-before: avoid; // this does not work for Chrome and will disable -webkit-column-break-before
+  } */
+
+  h1.ContentNormalFirst {
+    //-webkit-column-break-before: always;
+    //-webkit-break-before: always;
+    //break-before: always; // this does not work for Chrome and will disable -webkit-column-break-before: 
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-bottom: 0em;
+    font-size: 300%;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 0.1em;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-column-break-after: avoid;
+    -moz-column-break-after: avoid;
+    column-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h1.ContentNormal {
+    -webkit-column-break-before: always;
+    -webkit-break-before: always;
+    //break-before: always; // this does not work for Chrome and will disable -webkit-column-break-before: 
+    margin-top: 1em;
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-bottom: 0em;
+    font-size: 300%;
+    //border-top-style: solid;
+    //border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 0.1em;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-column-break-after: avoid;
+    -moz-column-break-after: avoid;
+    column-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h2.ContentNormal {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top:0.5em;
+    margin-bottom: 0em;
+    font-size: 200%;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-column-break-after: avoid;
+    -moz-column-break-after: avoid;
+    column-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h3.ContentNormal {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin-top:0.5em;
+    margin-bottom: 0em;
+    font-size: 150%;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-column-break-after: avoid;
+    -moz-column-break-after: avoid;
+    column-break-after: avoid;
+    break-after: avoid;
+  }
+  
+}

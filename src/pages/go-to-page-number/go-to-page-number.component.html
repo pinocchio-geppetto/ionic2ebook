@@ -1,0 +1,13 @@
+<ion-list>
+  <ion-list-header style="font-size: larger; font-weight: bolder; line-height: 200%;">
+    Page Number
+    <ion-badge item-right>{{currentBookPageNumber}}</ion-badge>
+  </ion-list-header>
+  <ion-item>
+    <ion-range [min]="bookPagesStart" [max]="bookPagesEnd" step="1" snaps=true pin=true debounce="200" (ionChange)="onPageChange()" [(ngModel)]="currentBookPageNumber">
+    <!-- <ion-range min="1" max="177" step="1" snaps=true pin=true debounce="200" (ionChange)="onPageChange()" [(ngModel)]="currentBookPageNumber"> -->
+      <ion-label range-left>{{bookPagesStart}}</ion-label>
+      <ion-label range-right>{{bookPagesEnd}}</ion-label>
+    </ion-range>
+  </ion-item>
+</ion-list>

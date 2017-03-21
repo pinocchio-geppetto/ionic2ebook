@@ -1,0 +1,17 @@
+page-book-cover {
+  ion-content {
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .tsc_book_cover {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 100%;
+    //transform: translateY(-50%) translateX(-50%);
+  }
+}

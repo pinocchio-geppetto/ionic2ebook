@@ -1,0 +1,11 @@
+<ion-list radio-group (ionChange)="onStyleChange()" [(ngModel)]="styleSelected">
+  <ion-list-header style="font-size: larger; font-weight: bolder; line-height: 200%;">
+    {{caption}}
+  </ion-list-header>
+
+  <ion-item *ngFor="let s of choiceOfStyles; let i = index">
+    <ion-label [ngStyle]="s.style">{{s.label}}</ion-label>
+    <ion-radio [value]="i"></ion-radio>
+  </ion-item>
+
+</ion-list>

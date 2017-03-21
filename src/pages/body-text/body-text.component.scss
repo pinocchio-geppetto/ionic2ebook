@@ -1,0 +1,157 @@
+// can use code below. Save for future use. Prefer syntax colouring of editor.
+//@mixin prefix($property, $value) {
+//  #{'-' + 'webkit' + '-' + $property}: $value;
+//  #{'-' + 'ms' + '-' + $property}: $value;
+//  #{$property}: $value;
+//}
+// example useage
+//@include prefix(transform, rotate(45deg));
+
+page-body-text {
+
+  .tsc_video_colour_white {
+    background-color:rgba(255, 255, 255, 1.0);  /* background rgba color does not inherit */
+    color: black;
+    border-color: rgba(255, 255, 255, 1.0);
+  }
+
+  .tsc_video_colour_cream {
+    background-color:rgba(245, 255, 250, 1.0); /* background rgba color does not inherit */
+    color: black;
+    border-color: rgba(245, 255, 250, 1.0);
+  }
+
+  .tsc_video_colour_gold {
+    background-color:rgba(255, 215, 0, 1.0); /* background rgba color does not inherit */
+    color: black;
+   border-color: rgba(255, 215, 0, 1.0);
+  }
+
+  .tsc_video_colour_dark_blue {
+    background-color:rgba(0, 0, 139, 1.0); /* background rgba color does not inherit */
+    color: white;
+    border-color: rgba(0, 0, 139, 1.0);
+  }
+
+  .tsc_video_colour_reverse {
+    background-color:rgba(0, 0, 0, 1.0); /* background rgba color does not inherit */
+    color: yellow;
+    border-color: rgba(0, 0, 0, 1.0);
+  }
+
+  perspective: 2000;
+  -webkit-perspective: 2000;
+  
+  ion-content {
+    line-height: 23px; //150%;
+    font-size: 14px;
+    font-family: "Sans-Serif";
+
+    .tsc_book_content_container {
+      box-sizing: border-box;
+      border-width: 14px;
+      border-radius: 7px;
+      border-style: solid;
+      box-shadow: 3px 3px 5px #888888;
+      position: absolute;
+      // use margin for padding. Assumes a div without padding (which is the case).
+      margin: 14px 14px 14px 14px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      // Chrome browser bug:
+      // it is important to scroll the container. The content should be fixed size.
+      // This will reduce a lot of computations on the browser.
+      // And remove some browser bugs like displaying only the first few columns instead of all columns.
+      overflow: hidden;
+
+      transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transform-origin: left top;
+      -webkit-transform-origin: left top;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .tsc_book_content_container_scroll {
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 2em;
+      display: block;
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .tsc_book_full_screen {
+      position: fixed;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+
+    .tsc_book_content {
+      box-sizing: border-box;
+      position: absolute;
+      overflow: hidden;
+      left: 0px;
+      top: 0px;
+      width: auto; // 100000px;
+      height: 100%;
+
+      -webkit-column-gap : 0px;
+      column-gap : 0px;
+
+      column-rule: 0px none #000000;
+
+      -webkit-column-fill : auto;
+      column-fill : auto;
+
+      -webkit-column-axis : horizontal;
+      column-axis : horizontal;
+
+      // not needed. browser will automate this
+      -webkit-column-count : auto;
+      column-count : auto;
+
+      /* The actual width will be set in code. */
+      -webkit-column-width : auto;
+      column-width : auto;
+    }
+
+    .tsc_book_page_number {
+      text-align: center;
+      display: block;
+
+      box-sizing: border-box;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 2em;
+      line-height: 2em;
+    }
+  }
+
+  .text-on-bottom > .button-inner {
+    flex-direction: column;
+  }
+
+  ion-footer {
+    ion-toolbar {
+      ion-buttons {
+        button {
+          min-height: 55px;
+          ion-icon {
+            font-size: 40px!important;
+          }
+        }
+      }
+    }
+  }
+}
+
