@@ -48,14 +48,11 @@ ionic serve
 4. Upload and run the generated app on an Android device or on an emulator.
 5. Publish your eBook as described in the Android section: http://ionicframework.com/docs/guide/publishing.html.
 
+# Place Content Into This eBook
+This is how to do it...
+
 # Configuration
-Compile the source code into an app on either Android or iOS.
-
-## How to Compile This eBook on Android
-
-## How to Comipile This eBook on iOS
-
-## How to Place Content Into This eBook
+Configure your eBook to track usages statics and to monitize your eBook.
 
 ## Configure Firebase Analytics
 Register a Firebase account. For each platform, do the following:
