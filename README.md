@@ -51,11 +51,25 @@ Compile the source code into an app on either Android or iOS.
 
 ## How to Place Content Into This eBook
 
-## How to Configure Firebase Analytics
+## Configure Firebase Analytics
+Register a Firebase account. For each platform, do the following:
 1. For Android, update ionic2ebook/google-services.json with a new download from your Firebase console. Formore information: https://firebase.google.com/docs/android/setup.
 2. For iOS, update ionic2ebook/GoogleService-Info.plist with a new download from your Firebase console. For more information: https://firebase.google.com/docs/ios/setup.
 
 If the firebase files above are not updated, the app will continue to work but there will be no Firebase reporting.
 
-## How to Configure Admob
+## Configure AdMob
+Register an AdMob account. For each platform, do the following:
+1. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update the adId to your AdMob adID.
+2. For Android, edit the file ionic2ebook/src/app/service/interstitial-ads.service.ts. In the constructor of the class `class InterstitialAdsService`, update the adId to your AdMob adID.
 
+```
+    if (this.platform.is('ios')) {
+      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase, will be changed to actual in the constructor
+      console.log('ios ad selected.');
+    }
+    else if (this.platform.is('android')) {
+      this.adOptions.adId = 'ca-app-pub-3940256099942544/4411468910', // test from firebase, will be changed to actual in the constructor
+      console.log('andoird ad selected.');
+    }
+```
