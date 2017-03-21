@@ -48,6 +48,8 @@ ionic serve
 4. Upload and run the generated app on an Android device or on an emulator.
 5. Publish your eBook as described in the Android section: http://ionicframework.com/docs/guide/publishing.html.
 
+Note that this eBook uses Crosswalk and Crosswalk (as of this writing using AndroidStudio version 2.3, and Android SDK Tools 25.0.3) does not display on Android emulators and GenyMotion. Crosswalk will display on actual devices and can be tested this way.
+
 # Place Content Into This eBook
 This is how to do it...
 
