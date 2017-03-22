@@ -36,7 +36,7 @@ ionic serve
 1. Run `ionic platform add ios`
 2. Install XCode as described in https://cordova.apache.org/docs/en/latest/guide/platforms/ios/.
 3. Register an iTunesConnect developer account as described in the iOS section here: http://ionicframework.com/docs/guide/publishing.html.
-4. Sign your app as in (2) above.
+4. Sign your app as in (3) above.
 5. Run `ionic build ios --prod --release`.
 6. Upload and run the generated app on an iOS device or on an emulator using XCode.
 7. Publish your eBook as described in the iOS section: http://ionicframework.com/docs/guide/publishing.html.
