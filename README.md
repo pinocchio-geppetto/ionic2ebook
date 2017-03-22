@@ -1,5 +1,5 @@
 # Ionic2eBook
-Ionic2eBook is an ebook reader built with Ionic2, Angular2 and Cordova.
+Ionic2eBook is an ebook reader built with Ionic2, Angular2 and Cordova. This app allows authors to embed their book in this app and ship this app as a book while monetizing through AdMob advertisements.
 
 This ebook reader displays each page with CSS multi-column layout. As each page is panned forward, this ebook will page to the next column on the right. Similarly, for each pan backwards, this ebook will page to the next column on the left.
 
