@@ -9,6 +9,7 @@ The advantages of this eBook reader are:
 - Ability to track usage statistics using Firebase Analytics. Each pan of a page is tracked.
 - Ability to monitize content using AdMob advertisements.
 - Runs on both Android and iOS.
+- Runs on a browser without advertisements and tracking. Code can be improved to support both.
 
 ## Example Use of This eBook
 This eBook is used to publish the following books on the following platforms:
