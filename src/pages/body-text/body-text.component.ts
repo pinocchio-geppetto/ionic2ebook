@@ -282,7 +282,7 @@ export class BodyText {
     // if the user is at Toc, do not remember this as the last persistent location to go back.
     let element: HTMLElement = this.document.getElementById(BodyText.beginningOfBookContentAnchor);
     let minCoordinate: number = this.scrollBookDistanceCounter.queryCoordinate(element);
-    if (coordinate > minCoordinate) {
+    if (coordinate >= minCoordinate) {
       this.persistentDataService.setItemPageCoordinate(
               coordinate,
               coordinate / this.scrollBookDistanceCounter.maxRightColumnLeftCoordinate,
